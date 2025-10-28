@@ -22,11 +22,11 @@ document.getElementById("myTestBtn").addEventListener("click", (ev)=>{
     const greenBtn = document.querySelector(".green");
     greenBtn.addEventListener("click", function() {
         console.info("green button clicked");
-      document.body.setAttribute = "greenBack";
+      document.body.setAttribute = ("class", "greenBack");
     });
 
     const blueBtn = document.querySelector(".blue");
     blueBtn.addEventListener("click", function() {
         console.info("blue button clicked");
-      document.body.setAttribute = "blueBack";
+      document.body.setAttribute("class", "blueBack");
     });
