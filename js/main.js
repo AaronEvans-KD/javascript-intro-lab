@@ -2,7 +2,7 @@ const myHeading = document.getElementById('myHeading');
 myHeading.innerText = "Aaron"
 const firstLink= document.querySelector('nav ul li a');
 firstLink.setAttribute('href', 'https://www.google.com');
-const colourPickers = document.querySelectorAll(".colpicker");
+const colourPickers = document.querySelectorAll(".colPicker");
 console.dir(colourPickers);
 for (let i = 0; i < colourPickers.length; i++) {
   colourPickers[i].style.backgroundColor = "red";
@@ -10,20 +10,23 @@ for (let i = 0; i < colourPickers.length; i++) {
 
 document.getElementById("myTestBtn").addEventListener("click", (ev)=>{
   console.info("Button clicked");
+  console.info(ev.target);
 });
-    console.info(ev.target);
 
     const redBtn = document.querySelector(".red");
     redBtn.addEventListener("click", function() {
-      document.body.style.backgroundColor = "redback";
+        console.info("Red button clicked");
+      document.body.setAttribute("class", "redBack");
     });
 
     const greenBtn = document.querySelector(".green");
     greenBtn.addEventListener("click", function() {
-      document.body.style.backgroundColor = "greenback";
+        console.info("green button clicked");
+      document.body.setAttribute = "greenBack";
     });
 
     const blueBtn = document.querySelector(".blue");
     blueBtn.addEventListener("click", function() {
-      document.body.style.backgroundColor = "blueback";
+        console.info("blue button clicked");
+      document.body.setAttribute = "blueBack";
     });
