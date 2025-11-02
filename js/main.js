@@ -22,7 +22,7 @@ document.getElementById("myTestBtn").addEventListener("click", (ev)=>{
     const greenBtn = document.querySelector(".green");
     greenBtn.addEventListener("click", function() {
         console.info("green button clicked");
-      document.body.setAttribute = ("class", "greenBack");
+      document.body.setAttribute("class", "greenBack");
     });
 
     const blueBtn = document.querySelector(".blue");
@@ -30,3 +30,5 @@ document.getElementById("myTestBtn").addEventListener("click", (ev)=>{
         console.info("blue button clicked");
       document.body.setAttribute("class", "blueBack");
     });
+
+    //refactor code to use a loop instead and mitigate repetition
